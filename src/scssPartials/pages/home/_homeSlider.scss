@@ -1,0 +1,117 @@
+.carousel .control-dots {
+  display: none;
+}
+.css-aq8pb7-MuiSvgIcon-root {
+  margin-top: -80px;
+  z-index: 3;
+}
+// --------------------------------------------
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .carousel-slide {
+    position: relative;
+    height: 700px;
+    width: 1284.5px;
+    padding: 0 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .caption {
+        color: $primaryDarkerBlue;
+        font-size: 60px;
+        text-align: start;
+      }
+      .desc {
+        color: $primaryDarkerBlack;
+        font-size: 24px;
+        text-align: start;
+        margin-top: 20px;
+      }
+      .c-btn {
+        height: 50px;
+        width: 200px;
+        margin-top: 3em;
+        font-size: 20px;
+        color: $primaryDarkerBlack;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: $primaryOrange;
+        color: #fff;
+        border: none;
+        transition: 0.5s;
+        &:hover {
+          color: #fff;
+          background-color: #eb7928;
+
+          border: none;
+        }
+      }
+    }
+    .graphic {
+      width: 600px;
+    }
+    @media screen and (max-width: 1285px) {
+      .texts {
+        width: 100%;
+        .caption {
+          font-size: 40px;
+        }
+        .desc {
+          font-size: 18px;
+        }
+      }
+      .graphic {
+        width: 500px;
+      }
+    }
+    @media screen and (max-width: 1065px) {
+      .graphic {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 1285px) {
+    .carousel-slide {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1065px) {
+    .carousel-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 8em;
+      height: 400px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel-slide {
+      width: 100%;
+      margin-top: 4em;
+      padding: 15px;
+      height: 400px;
+      .texts {
+        width: 100%;
+        .caption {
+          font-size: 25px;
+        }
+        .desc {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.about-page {
+  width: 100%;
+  height: 2900px;
+  // background-color: "peru";
+
+  .banner {
+    height: 400px;
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      filter: blur(0.5px);
+    }
+  }
+  .intro-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .intro {
+      width: 1284.5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 120px;
+      padding: 0 45px;
+      .intro-heading {
+        color: $primaryDarkerBlue;
+        text-align: left;
+        width: 100%;
+        font-size: 35px;
+        padding-left: 10px;
+      }
+      .intro-desc {
+        color: $primaryGrey;
+        padding: 10px 10px 0;
+        text-align: justify;
+        font-size: 20px;
+        font-family: Roboto;
+      }
+    }
+  }
+  .mission-vision {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+    margin-top: 80px;
+    .mv-box {
+      width: 1284.5px;
+      height: 400px;
+
+      padding: 0 45px;
+      display: flex;
+      justify-content: space-between;
+      .mv-icon {
+        color: $primaryDarkBlue;
+      }
+      .mission {
+        height: 300px;
+        width: 550px;
+
+        .mission-heading {
+          color: $primaryDarkerBlue;
+          text-align: left;
+          width: 100%;
+          font-size: 35px;
+          padding: 10px;
+        }
+        .mission-desc {
+          color: $primaryGrey;
+          padding: 10px;
+          text-align: justify;
+          font-size: 20px;
+          font-family: Roboto;
+        }
+      }
+      .vision {
+        height: 300px;
+        width: 550px;
+        .vision-heading {
+          color: $primaryDarkerBlue;
+          text-align: left;
+          width: 100%;
+          font-size: 35px;
+          padding: 10px;
+        }
+        .vision-desc {
+          color: $primaryGrey;
+          padding: 10px;
+          text-align: justify;
+          font-size: 20px;
+          font-family: Roboto;
+        }
+      }
+    }
+  }
+
+  .experience {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $primaryDarkerBlue;
+    margin-top: 80px;
+
+    .experience-heading {
+      // padding: 0px;
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
+    .experience-desc {
+      font-size: 20px;
+      color: $primaryGrey;
+      padding: 10px 45px;
+      text-align: justify;
+      width: 1284.5px;
+      font-family: Roboto;
+    }
+  }
+  .consulant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $primaryDarkerBlue;
+    margin-top: 80px;
+
+    .consulant-heading {
+      // padding: 0px;
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
+    .consulant-desc {
+      font-size: 20px;
+      color: $primaryGrey;
+      padding: 10px 45px;
+      text-align: justify;
+      width: 1284.5px;
+      font-family: Roboto;
+    }
+  }
+  .success {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $primaryDarkerBlue;
+    margin-top: 80px;
+
+    .success-heading {
+      // padding: 0px;
+      font-size: 35px;
+      padding-bottom: 10px;
+    }
+    .success-desc {
+      font-size: 20px;
+      color: $primaryGrey;
+      padding: 10px 45px;
+      text-align: justify;
+      width: 1284.5px;
+      font-family: Roboto;
+    }
+  }
+}

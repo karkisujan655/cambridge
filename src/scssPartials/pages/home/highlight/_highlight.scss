@@ -1,0 +1,48 @@
+@import "./highlightCard";
+
+.highlight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  .heading {
+    width: 1284.5px;
+    text-align: center;
+    font-size: 40px;
+    color: $primaryDarkerBlue;
+  }
+  .highlight-desc {
+    color: $primaryGrey;
+    padding-bottom: 40px;
+    font-family: Roboto;
+  }
+
+  .class-wrapper {
+    width: 1284.5px;
+    padding: 0 45px;
+  }
+  @media screen and (max-width: 1285px) {
+    .class-wrapper {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .heading {
+      padding: 0 1em;
+      font-size: 30px;
+    }
+    .highlight-desc {
+      padding: 0.5em 1em;
+    }
+    .class-wrapper {
+      margin-top: 1em;
+      padding: 15px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .highlight {
+    margin-top: 60px;
+  }
+}

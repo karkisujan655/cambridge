@@ -1,0 +1,39 @@
+.highlight-card {
+  width: max-content;
+  cursor: pointer;
+  .flag {
+    padding: 0.1em;
+    color: #fff;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    margin: auto;
+  }
+  @media screen and (max-width: 950px) {
+    .flag {
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      height: 60px;
+      min-height: 60px;
+      max-height: 60px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .flag {
+      width: 75px;
+      min-width: 75px;
+      max-width: 75px;
+      height: 45px;
+      min-height: 45px;
+      max-height: 45px;
+    }
+  }
+}
+
+// .desc {
+//   font-size: 24px;
+// }

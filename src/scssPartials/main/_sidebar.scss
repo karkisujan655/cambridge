@@ -1,0 +1,55 @@
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  display: none !important;
+}
+
+// ------------------------------------------------
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  width: 350px;
+  .sidebar-logo {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primaryDarkerBlue;
+    padding: 20px;
+
+    .logo {
+      .side-logo {
+        height: 40px;
+        width: 80px;
+      }
+    }
+    .cancel {
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+      &:hover {
+        color: $primaryOrange;
+      }
+    }
+  }
+  .menu-item {
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0.4em;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: $primaryDarkerBlack;
+      cursor: pointer;
+      padding: 5px;
+      font-family: "Roboto", sans-serif;
+      margin-top: 0.4em;
+      .nav-link {
+        text-decoration: none;
+        color: $primaryDarkerBlack;
+        color: $primaryDarkerBlue;
+        font-size: 1.1rem;
+      }
+      .nav-link:active {
+        color: $primaryOrange;
+      }
+    }
+  }
+}

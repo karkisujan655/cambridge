@@ -1,0 +1,31 @@
+// $Brand:
+$primaryDarkBlue: #0268a8;
+$primaryDarkerBlue: #064267;
+$primaryDarkerBlack: rgb(24, 23, 23);
+$primaryBlue: #344871;
+$primaryOrange: #ef7a26;
+$primaryBrown: #6b3415;
+$primaryRed: red;
+$primaryYellow: #f99422;
+$darkgreen: #209c48;
+$primarylightgreen: #60a145;
+$primaryGrey: rgb(49, 47, 47);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+@import "./scssPartials/main/navbar";
+@import "./scssPartials/main/footer/footer";
+
+@import "./scssPartials/pages/home/homePage";
+@import "./scssPartials/pages/about/aboutPage";
+@import "./scssPartials/pages/error/oops";
+
+@import "./scssPartials/pages/studyAbroad/abroadCountry";

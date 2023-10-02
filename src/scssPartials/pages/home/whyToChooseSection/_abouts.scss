@@ -1,0 +1,60 @@
+@import "./aboutCard";
+
+.abouts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  .contents-wrapper {
+    width: 1284.5px;
+    padding: 0 45px;
+    .heading {
+      font-size: 40px;
+      text-align: center;
+      color: $primaryDarkerBlue;
+      text-align: center;
+      .highlight-head {
+        color: $primaryDarkerBlack;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .heading {
+        font-size: 30px;
+      }
+    }
+    .sub-head {
+      margin-top: 5px;
+      font-family: Roboto;
+      color: $primaryGrey;
+      text-align: center;
+    }
+    .cards-wrapper {
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+      width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+      .cards-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @media screen and (max-width: 1285px) {
+    .contents-wrapper {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .contents-wrapper {
+      padding: 15px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .abouts {
+    margin-top: 60px;
+  }
+}

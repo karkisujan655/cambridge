@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  padding: 0 45px;
+  .img-desc-wrapper {
+    display: flex;
+    gap: 50px;
+    width: 1284.5px;
+    justify-content: center;
+    .icon {
+      img {
+        width: 300px;
+      }
+    }
+    .desc {
+      width: 700px;
+      .head {
+        margin-bottom: 30px;
+        width: 480px;
+        color: $darkgreen;
+        color: $primaryDarkerBlue;
+        .head-highlight {
+          color: $primaryDarkerBlack;
+          font-size: 45px;
+        }
+      }
+      .message {
+        color: Black;
+        word-spacing: 8px;
+        width: 100%;
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        line-clamp: 10;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  @media screen and (max-width: 1285px) {
+    .img-desc-wrapper {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    .img-desc-wrapper {
+      flex-direction: column;
+      gap: 20px;
+      .desc {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .img-desc-wrapper {
+      .icon {
+        img {
+          width: 200px;
+        }
+      }
+      .desc {
+        .head {
+          margin-bottom: 15px;
+          width: 100%;
+          color: $darkgreen;
+          color: $primaryDarkerBlue;
+          font-size: 25px;
+          .head-highlight {
+            color: $primaryDarkerBlack;
+            font-size: 35px;
+          }
+        }
+        .message {
+          // color: Black;
+          // word-spacing: 8px;
+          // width: 100%;
+          // text-align: justify;
+          // font-family: "Roboto", sans-serif;
+          // overflow: hidden;
+          // display: -webkit-box;
+          // -webkit-line-clamp: 10;
+          // line-clamp: 10;
+          // -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .main {
+    margin-top: 60px;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,62 @@
+@import "./partnerCard";
+
+.partner {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 160px;
+  .in-wrapper {
+    width: 1284.5px;
+    padding: 0 45px;
+    .head {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+      text-align: center;
+      font-size: 40px;
+      color: $primaryDarkerBlue;
+      width: 100%;
+    }
+    @media screen and (max-width: 550px) {
+      .head {
+        font-size: 30px;
+      }
+    }
+    .cards-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5em 3em;
+      margin-bottom: 2em;
+    }
+    @media screen and (max-width: 600px) {
+      .cards-wrapper {
+        gap: 2em ;
+      }
+    }
+  }
+  @media screen and (max-width: 1285px) {
+    .in-wrapper {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .in-wrapper {
+      padding: 15px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .partner {
+    margin-top: 60px;
+  }
+}
