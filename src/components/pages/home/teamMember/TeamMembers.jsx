@@ -45,7 +45,7 @@ TeamMembers.defaultProps = {
     {
       id: 1,
       image: fotoC,
-      name: "RITA SILWAL",
+      name: "Nirjana Malla Thakuri",
       position: "Manager",
       socialLinks: ["", "", ""],
     },

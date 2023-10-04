@@ -58,7 +58,7 @@ const Footer = () => {
                 <div className="links-content-gap">About</div>
                 <div className="links-content-gap">Photos</div>
                 <div className="links-content-gap">Blogs</div>
-                <div className="links-content-gap">Career</div>
+                {/* <div className="links-content-gap">Career</div> */}
               </div>
             </div>
           </div>

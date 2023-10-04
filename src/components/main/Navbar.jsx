@@ -15,17 +15,17 @@ export default function Navbar() {
 
   const menuItems = [
     {
-      id: 5,
+      id: 0,
       title: "Home",
       path: "/",
     },
     {
-      id: 0,
+      id: 1,
       title: "About Us",
       path: "/about-us",
     },
     {
-      id: 1,
+      id: 2,
       title: "Study Abroad",
       path: "/study-abroad",
       sublinks: [
@@ -40,38 +40,51 @@ export default function Navbar() {
           path: "canada",
         },
         {
-          id: 2,
+          id: 3,
           title: "USA",
           path: "usa",
         },
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "IELTS/PTE Prepration",
-      path: "/ielts-pte-preparation",
+      path: "/preparation-ielts-pte",
       sublinks: [
         {
           id: 0,
           title: "IELTS",
-          path: "",
+          path: "ielts",
         },
         {
-          id: 0,
+          id: 1,
           title: "PTE",
-          path: "",
+          path: "pte",
         },
       ],
     },
-    {
-      id: 3,
-      title: "Student Corner",
-      path: "/student-corner",
-    },
+
     {
       id: 4,
       title: "Resources",
       path: "/resources",
+      sublinks: [
+        {
+          id: 0,
+          title: "FAQ to Study Abroad",
+          path: "faq",
+        },
+        {
+          id: 1,
+          title: "Statement of Proposes (SOP)",
+          path: "sop",
+        },
+        {
+          id: 3,
+          title: "Interview Guidelines",
+          path: "interview-guide",
+        },
+      ],
     },
   ];
 
@@ -93,7 +106,14 @@ export default function Navbar() {
                 <span>info@cambridgeedu.com.np</span>
                 <span>977-1-4223815 | 4256776</span>|
                 <span className="cursor-download">Downloads</span>|
-                <span className="cursor-download">Contact Us</span>
+                <span
+                  className="cursor-download"
+                  onClick={() => {
+                    navigate("/contact-us");
+                  }}
+                >
+                  Contact Us
+                </span>
               </div>
               <div className="left social-icons">
                 <BiLogoFacebookCircle className="fb-icon icon" />
@@ -125,21 +145,23 @@ export default function Navbar() {
                     );
                   } else {
                     return (
-                      <div class="dropdown">
-                        <button class="dropbtn">{title}</button>
-                        <div class="dropdown-content">
-                          {sublinks.map((item) => {
-                            const { id = "", title = "", path = "" } = item;
-                            return (
-                              <NavLink
-                                to={`${navlinkPath}/${path}`}
-                                key={id}
-                                className="nav-link"
-                              >
-                                {title}
-                              </NavLink>
-                            );
-                          })}
+                      <div className="dropdown" key={id}>
+                        <button className="dropbtn">{title}</button>
+                        <div className="hidden-dropdown">
+                          <div className="dropdown-content">
+                            {sublinks.map((item) => {
+                              const { id = "", title = "", path = "" } = item;
+                              return (
+                                <NavLink
+                                  to={`${navlinkPath}/${path}`}
+                                  key={id}
+                                  className="nav-link"
+                                >
+                                  {title}
+                                </NavLink>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
                     );
@@ -161,7 +183,11 @@ export default function Navbar() {
         </div>
         <div className="top-full"></div>
       </div>
-      <Sidebar state={state && state} setState={setState && setState} menuItems={menuItems && menuItems} />
+      <Sidebar
+        state={state && state}
+        setState={setState && setState}
+        menuItems={menuItems && menuItems}
+      />
     </>
   );
 }

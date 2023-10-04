@@ -1,13 +1,15 @@
 .study-abroad {
   width: 100%;
-  height: 5100px;
+  // height: 3600px;
   display: flex;
   justify-self: center;
   flex-direction: column;
   align-items: center;
   color: $primaryGrey;
+  font-family: Roboto;
+
   .country-banner {
-    height: 400px;
+    height: 340px;
     width: 100%;
     .country-banner-img {
       height: 100%;
@@ -17,14 +19,17 @@
   }
   .menu-nav {
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: "Roboto", sans-serif;
     box-shadow: 3px 3px 10px rgb(228, 227, 227);
+    background-color: #fff;
+    z-index: 2;
     position: sticky;
+    top: 0;
     .nav-items {
       width: 1284.5px;
       height: 100%;
@@ -39,699 +44,271 @@
       }
     }
   }
-  .study-aus {
+
+  .study {
     width: 1284.5px;
-    padding: 0 45px;
+    padding: 45px 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+    text-align: justify;
     .content {
-      background-color: grey;
       width: 800px;
+      .aus {
+        .study-aus-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+        }
+        .aus-img {
+          height: 260px;
+          width: 250px;
+          float: left;
+          padding: 48px 5px 0 0;
+          margin-right: 10px;
+        }
+        .aus-why-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+          padding: 45px 0 10px 0;
+          // background-color: red;
+        }
+        .apply-aus-desc {
+          line-height: 1.5;
+          color: $primaryGrey;
+        }
+        .apply-aus-desc-head {
+          line-height: 2;
+          color: $primaryDarkerBlack;
+        }
+        .apply-desc {
+          line-height: 2;
+        }
+        .apply-desc-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 45px;
+        }
+        .uni {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          .aus-uni-desc {
+            line-height: 1.5;
+            // font-size: 16px;
+            //   text-decoration: double;
+          }
+        }
+        .aus-cost-sub-heading {
+          color: $primaryDarkerBlack;
+          padding: 20px 0;
+          font-family: "Playfair Display", serif;
+          font-size: 18px;
+        }
+        .aus-cost-desc {
+          line-height: 2;
+        }
+        .aus-cost-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .aus-scholor-desc {
+          color: $primaryDarkerBlack;
+          padding-bottom: 20px;
+          // font-family: "Playfair Display", serif;
+        }
+        .aus-scholor-desc {
+          line-height: 1.5;
+          padding-bottom: 5px;
+          .scholor-span {
+            font-size: 20px;
+            color: $primaryDarkerBlack;
+          }
+        }
+      }
+      .can {
+        .study-can-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+        }
+        .can-img {
+          height: 260px;
+          width: 250px;
+          float: left;
+          padding: 48px 5px 0 0;
+          margin-right: 10px;
+        }
+        .can-why-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+          padding: 45px 0 10px 0;
+          // background-color: red;
+        }
+        .apply-can-desc {
+          line-height: 1.5;
+          color: $primaryGrey;
+        }
+        .apply-can-desc-head {
+          line-height: 2;
+          color: $primaryDarkerBlack;
+        }
+        .apply-desc {
+          line-height: 2;
+        }
+        .apply-desc-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 45px;
+        }
+        .uni {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          .can-uni-desc {
+            line-height: 1.5;
+            // font-size: 16px;
+            //   text-decoration: double;
+          }
+        }
+        .can-cost-sub-heading {
+          color: $primaryDarkerBlack;
+          padding: 20px 0;
+          font-family: "Playfair Display", serif;
+          font-size: 18px;
+        }
+        .can-cost-desc {
+          line-height: 2;
+        }
+        .can-cost-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .can-scholor-desc {
+          color: $primaryDarkerBlack;
+          padding-bottom: 20px;
+          // font-family: "Playfair Display", serif;
+        }
+        .can-scholor-desc {
+          line-height: 1.5;
+          padding-bottom: 5px;
+          .scholor-span {
+            font-size: 20px;
+            color: $primaryDarkerBlack;
+          }
+        }
+      }
+      .usa {
+        .study-usa-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+        }
+        .usa-img {
+          height: 260px;
+          width: 250px;
+          float: left;
+          padding: 48px 5px 0 0;
+          margin-right: 10px;
+        }
+        .usa-why-heading {
+          color: $primaryDarkerBlue;
+          font-family: playfair;
+          padding: 45px 0 10px 0;
+          // background-color: red;
+        }
+        .apply-usa-desc {
+          line-height: 1.5;
+          color: $primaryGrey;
+        }
+        .apply-usa-desc-head {
+          line-height: 2;
+          color: $primaryDarkerBlack;
+        }
+        .apply-desc {
+          line-height: 2;
+        }
+        .apply-desc-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 45px;
+        }
+        .uni {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          .usa-uni-desc {
+            line-height: 1.5;
+            // font-size: 16px;
+            //   text-decoration: double;
+          }
+        }
+        .usa-cost-sub-heading {
+          color: $primaryDarkerBlack;
+          padding: 20px 0;
+          font-family: "Playfair Display", serif;
+          font-size: 18px;
+        }
+        .usa-cost-desc {
+          line-height: 2;
+        }
+        .usa-cost-note {
+          line-height: 1.5;
+          color: $primaryDarkerBlack;
+          font-weight: 500;
+          padding-top: 30px;
+        }
+        .usa-scholor-desc {
+          color: $primaryDarkerBlack;
+          padding-bottom: 20px;
+          // font-family: "Playfair Display", serif;
+        }
+        .usa-scholor-desc {
+          line-height: 1.5;
+          padding-bottom: 5px;
+          .scholor-span {
+            font-size: 20px;
+            color: $primaryDarkerBlack;
+          }
+        }
+      }
     }
     .form {
-      background-color: yellowgreen;
+      .box {
+        height: 320px;
+        width: 100%;
+        // background-color: bisque;
+        box-shadow: 0px 0px 4px 0px #989898;
+        border-radius: 20px;
+        position: sticky;
+        top: 120px;
+        // z-index: 5;
+        .head {
+          color: $primaryDarkerBlue;
+          padding: 20px;
+          text-align: center;
+        }
+        .input-area {
+          padding: 15px 0 0 30px;
+          display: flex;
+          flex-direction: column;
+          .text-box {
+            height: 30px;
+            width: 250px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+          }
+        }
+        .submit-btn {
+          margin: 20px 30px;
+          height: 25px;
+          width: 80px;
+          border-radius: 20px;
+          // color: $primaryOrange;
+        }
+      }
     }
   }
-
-  //   .study-aus {
-  //     width: 1284.5px;
-  //     padding: 0 45px;
-  //     display: flex;
-  //     justify-self: center;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     .aus-heading {
-  //       color: $primaryDarkerBlue;
-  //       text-align: center;
-  //       margin: 50px 0 50px 0;
-  //       font-size: 35px;
-  //     }
-  //     .aus-first-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-
-  //       .box-one {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-  //       }
-  //       .box-two {
-  //         width: 50%;
-  //         height: 400px;
-  //         .aus-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //     }
-  //     .aus-second-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .box-three {
-  //         width: 50%;
-  //         height: 400px;
-  //         .aus-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .box-four {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .aus-why-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //       }
-  //     }
-  //     .apply-aus {
-  //       width: 100%;
-  //       font-family: Roboto;
-
-  //       .apply-aus-heading {
-  //         color: $primaryDarkerBlack;
-  //         padding-bottom: 20px;
-  //         font-family: "Playfair Display", serif;
-  //         text-align: center;
-  //       }
-  //       .apply-aus-desc {
-  //         line-height: 1.5;
-  //         color: $primaryGrey;
-  //         text-align: justify;
-  //       }
-  //       .apply-aus-desc-head {
-  //         line-height: 2;
-  //         color: $primaryDarkerBlack;
-  //         text-align: justify;
-  //       }
-  //       .apply-aus-box {
-  //         width: 100%;
-  //         display: flex;
-  //         justify-content: space-between;
-  //         margin-top: 20px;
-  //         .box-five {
-  //           width: 50%;
-  //           color: $primaryGrey;
-  //           font-family: Roboto;
-  //         }
-  //         .box-six {
-  //           width: 45%;
-  //           margin-top: 50px;
-
-  //           height: 800px;
-  //           .apply-aus-img {
-  //             width: 100%;
-  //             height: 100%;
-  //             border-radius: 5px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .aus-requirement {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .box-seven {
-  //         width: 50%;
-  //         height: 400px;
-  //         color: blue;
-  //         .aus-requir-img {
-  //           width: 100%;
-  //           height: 600px;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .box-eight {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .aus-requir-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .apply-desc {
-  //           line-height: 2;
-  //         }
-  //         .apply-desc-note {
-  //           line-height: 1.5;
-  //           color: $primaryDarkerBlack;
-  //           font-weight: 500;
-  //           padding-top: 45px;
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //--------------Canada------------
-
-  //   .study-can {
-  //     width: 1284.5px;
-  //     padding: 0 45px;
-  //     display: flex;
-  //     justify-self: center;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     .can-heading {
-  //       color: $primaryDarkerBlue;
-  //       text-align: center;
-  //       margin: 50px 0 50px 0;
-  //       font-size: 35px;
-  //     }
-  //     .can-first-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-
-  //       .can-box-one {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-  //       }
-  //       .can-box-two {
-  //         width: 50%;
-  //         height: 400px;
-  //         .can-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //     }
-  //     .can-second-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .can-box-three {
-  //         width: 50%;
-  //         height: 400px;
-  //         .can-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .can-box-four {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .can-why-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //       }
-  //     }
-  //     .can-third-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-
-  //       .can-box-five {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-  //         .can-uni-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .can-uni-desc {
-  //           line-height: 1.5;
-  //           font-size: 18px;
-  //           //   text-decoration: double;
-  //         }
-  //       }
-  //       .can-box-six {
-  //         width: 50%;
-  //         height: 400px;
-  //         .can-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //     }
-  //     .can-fourth-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .can-box-seven {
-  //         width: 50%;
-  //         height: 400px;
-  //         .can-cost-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .can-box-eight {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .can-cost-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .can-cost-sub-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding: 20px 0;
-  //           font-family: "Playfair Display", serif;
-  //           font-size: 18px;
-  //         }
-  //         .can-cost-desc {
-  //           line-height: 2;
-  //         }
-  //         .can-cost-note {
-  //           line-height: 1.5;
-  //           color: $primaryDarkerBlack;
-  //           font-weight: 500;
-  //           padding-top: 30px;
-  //         }
-  //       }
-  //     }
-  //     .can-fifth-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       .can-box-nine {
-  //         width: 50%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .can-scholor-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .can-scholor-desc {
-  //           line-height: 1.5;
-  //           padding-bottom: 5px;
-  //           .scholor-span {
-  //             font-size: 20px;
-  //             color: $primaryDarkerBlack;
-  //           }
-  //         }
-  //       }
-
-  //       .can-box-ten {
-  //         width: 45%;
-  //         height: 400px;
-  //         .can-scholor-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //           position: relative;
-  //           bottom: 30px;
-  //         }
-  //       }
-  //     }
-  //     .apply-aus {
-  //       width: 100%;
-  //       font-family: Roboto;
-  //       padding-top: 50px;
-
-  //       .apply-aus-heading {
-  //         color: $primaryDarkerBlack;
-  //         padding-bottom: 20px;
-  //         font-family: "Playfair Display", serif;
-  //         text-align: center;
-  //       }
-  //       .apply-aus-desc {
-  //         line-height: 1.5;
-  //         color: $primaryGrey;
-  //         text-align: justify;
-  //       }
-  //       .apply-aus-desc-head {
-  //         line-height: 2;
-  //         color: $primaryDarkerBlack;
-  //         text-align: justify;
-  //       }
-  //       .apply-aus-box {
-  //         width: 100%;
-  //         display: flex;
-  //         justify-content: space-between;
-  //         margin-top: 20px;
-  //         .box-five {
-  //           width: 50%;
-  //           color: $primaryGrey;
-  //           font-family: Roboto;
-  //         }
-  //         .box-six {
-  //           width: 45%;
-  //           margin-top: 50px;
-
-  //           height: 800px;
-  //           .apply-aus-img {
-  //             width: 100%;
-  //             height: 100%;
-  //             border-radius: 5px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .aus-requirement {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .box-seven {
-  //         width: 50%;
-  //         height: 400px;
-  //         color: blue;
-  //         .aus-requir-img {
-  //           width: 100%;
-  //           height: 600px;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .box-eight {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .aus-requir-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .apply-desc {
-  //           line-height: 2;
-  //         }
-  //         .apply-desc-note {
-  //           line-height: 1.5;
-  //           color: $primaryDarkerBlack;
-  //           font-weight: 500;
-  //           padding-top: 45px;
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //--------USA---------
-  //   .study-usa {
-  //     width: 1284.5px;
-  //     padding: 0 45px;
-  //     display: flex;
-  //     justify-self: center;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     .usa-heading {
-  //       color: $primaryDarkerBlue;
-  //       text-align: Start;
-  //       width: 100%;
-  //       margin: 50px 0 50px 0;
-  //       font-size: 35px;
-  //       background-color: red;
-  //     }
-  //     .usa-first-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-
-  //       .usa-box-one {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-  //       }
-  //       .usa-box-two {
-  //         width: 50%;
-  //         height: 400px;
-  //         .usa-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //     }
-  //     .usa-second-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .usa-box-three {
-  //         width: 50%;
-  //         height: 400px;
-  //         .usa-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .usa-box-four {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .usa-why-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //       }
-  //     }
-  //     .usa-third-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-
-  //       .usa-box-five {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-  //         .usa-uni-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .usa-uni-desc {
-  //           line-height: 1.5;
-  //           font-size: 18px;
-  //           //   text-decoration: double;
-  //         }
-  //       }
-  //       .usa-box-six {
-  //         width: 50%;
-  //         height: 400px;
-  //         .usa-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //           position: relative;
-  //           top: 80px;
-  //         }
-  //       }
-  //     }
-  //     .usa-fourth-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .usa-box-seven {
-  //         width: 50%;
-  //         height: 400px;
-  //         .usa-cost-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .usa-box-eight {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .usa-cost-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .usa-cost-sub-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding: 20px 0;
-  //           font-family: "Playfair Display", serif;
-  //           font-size: 18px;
-  //         }
-  //         .usa-cost-desc {
-  //           line-height: 2;
-  //         }
-  //         .usa-cost-note {
-  //           line-height: 1.5;
-  //           color: $primaryDarkerBlack;
-  //           font-weight: 500;
-  //           padding-top: 30px;
-  //         }
-  //       }
-  //     }
-  //     .usa-fifth-part {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       .usa-box-nine {
-  //         width: 50%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .usa-scholor-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .usa-scholor-desc {
-  //           line-height: 1.5;
-  //           padding-bottom: 5px;
-  //           .scholor-span {
-  //             font-size: 20px;
-  //             color: $primaryDarkerBlack;
-  //           }
-  //         }
-  //       }
-
-  //       .usa-box-ten {
-  //         width: 45%;
-  //         height: 400px;
-  //         .usa-scholor-img {
-  //           width: 100%;
-  //           height: 100%;
-  //           border-radius: 5px;
-  //           position: relative;
-  //           bottom: 30px;
-  //         }
-  //       }
-  //     }
-  //     .apply-usa {
-  //       width: 100%;
-  //       font-family: Roboto;
-  //       padding-top: 50px;
-
-  //       .apply-usa-heading {
-  //         color: $primaryDarkerBlack;
-  //         padding-bottom: 20px;
-  //         font-family: "Playfair Display", serif;
-  //         text-align: center;
-  //       }
-  //       .apply-usa-desc {
-  //         line-height: 1.5;
-  //         color: $primaryGrey;
-  //         text-align: justify;
-  //       }
-  //       .apply-usa-desc-head {
-  //         line-height: 2;
-  //         color: $primaryDarkerBlack;
-  //         text-align: justify;
-  //       }
-  //       .apply-usa-box {
-  //         width: 100%;
-  //         display: flex;
-  //         justify-content: space-between;
-  //         margin-top: 20px;
-  //         .box-five {
-  //           width: 50%;
-  //           color: $primaryGrey;
-  //           font-family: Roboto;
-  //         }
-  //         .box-six {
-  //           width: 45%;
-  //           margin-top: 50px;
-
-  //           height: 800px;
-  //           .apply-usa-img {
-  //             width: 100%;
-  //             height: 100%;
-  //             border-radius: 5px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .usa-requirement {
-  //       display: flex;
-  //       width: 100%;
-  //       justify-content: space-between;
-  //       //   background-color: red;
-  //       text-align: justify;
-  //       padding: 100px 0;
-
-  //       .box-seven {
-  //         width: 50%;
-  //         height: 400px;
-  //         color: blue;
-  //         .usa-requir-img {
-  //           width: 100%;
-  //           height: 600px;
-  //           border-radius: 5px;
-  //         }
-  //       }
-  //       .box-eight {
-  //         width: 45%;
-  //         color: $primaryGrey;
-  //         font-family: Roboto;
-
-  //         .usa-requir-heading {
-  //           color: $primaryDarkerBlack;
-  //           padding-bottom: 20px;
-  //           font-family: "Playfair Display", serif;
-  //         }
-  //         .apply-desc {
-  //           line-height: 2;
-  //         }
-  //         .apply-desc-note {
-  //           line-height: 1.5;
-  //           color: $primaryDarkerBlack;
-  //           font-weight: 500;
-  //           padding-top: 45px;
-  //         }
-  //       }
-  //     }
-  //   }
 }

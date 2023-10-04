@@ -1,0 +1,59 @@
+@import "./accordion.scss";
+
+.resources {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .resources-banner {
+    height: 340px;
+    width: 100%;
+  }
+  .content {
+    width: 1284.5px;
+    justify-content: center;
+    padding: 0 45px;
+    font-family: Roboto;
+
+    .sop {
+      .sop-title {
+        font-size: 45px;
+        margin: 120px 0 45px;
+        color: $primaryDarkerBlue;
+        font-family: Playfair;
+      }
+      .sop-sub-title {
+        font-size: 35px;
+        color: $primaryGrey;
+        margin-bottom: 45px;
+      }
+      .guide-title {
+        font-size: 28px;
+        color: $primaryDarkerBlue;
+        margin-bottom: 20px;
+      }
+      .desc {
+        margin-bottom: 20px;
+        color: $primaryGrey;
+      }
+    }
+    .interview {
+      .interview-title {
+        font-size: 45px;
+        margin: 120px 0 0;
+        color: $primaryDarkerBlue;
+        font-family: Playfair;
+      }
+      .guide-title {
+        font-size: 28px;
+        color: $primaryDarkerBlue;
+        margin: 45px 0 20px;
+      }
+      .desc {
+        margin-bottom: 20px;
+        color: $primaryGrey;
+      }
+    }
+  }
+}
