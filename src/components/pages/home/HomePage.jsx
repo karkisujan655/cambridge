@@ -14,11 +14,11 @@ import Gallery from "./gallery/Gallery";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="home-page">
       <div className="h-slider">
-        <div className="home-slider">
-          <HomeSlider />
-        </div>
+        {/* <div className="home-slider"> */}
+        <HomeSlider />
+        {/* </div> */}
       </div>
       <WelcomeToSection />
       <Country />
@@ -32,7 +32,7 @@ const HomePage = () => {
 
       <NewsCarousel />
       {/* <Gallery /> */}
-    </>
+    </div>
   );
 };
 

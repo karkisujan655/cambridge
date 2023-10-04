@@ -1,8 +1,8 @@
 import React from "react";
 import CourseCard from "./CourseCard";
-import img1 from "../../../../images/course/ielts.jpg";
-import img2 from "../../../../images/course/pte.png";
-import img3 from "../../../../images/course/sat.jpg";
+import img2 from "../../../../images/course/ielts.jpeg";
+import img1 from "../../../../images/course/pte.jpeg";
+import img3 from "../../../../images/course/sat.jpeg";
 // import bgImg from "../../../../images/course/bg.jpg";
 
 const Courses = () => {
@@ -12,12 +12,15 @@ const Courses = () => {
       courseName: "PTE",
       desc: "Our aim at Cambridge Institute of Technology is to help our students achieve success in the Pearson Test of English or PTE.",
       courseImg: img1,
+      path:'pte'
     },
     {
       id: 1,
       courseName: "IELTS",
       desc: "IELTS stands for “International English Language Testing System",
       courseImg: img2,
+      path:'ielts'
+
     },
     {
       id: 2,

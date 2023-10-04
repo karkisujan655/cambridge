@@ -81,7 +81,9 @@ const Footer = () => {
         <div className="wrapper">
           <div className="copyright">
             ©{newDate} Cambridge Institute | Designed By{" "}
-            <a href="https://nextaussietech.com/">Next Aussie Tech</a>
+            <a href="https://nextaussietech.com/" target="_blank">
+              Next Aussie Tech
+            </a>
           </div>
         </div>
       </div>

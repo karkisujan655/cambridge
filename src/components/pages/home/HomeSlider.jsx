@@ -24,63 +24,21 @@
 //       stopOnHover={false}
 //     >
 //       <div className="carousel-main">
-
-//       <div className="carousel-slide">
-//         {/* <img src={img3} className="image" /> */}
-//         {/* <div className="home-overlay"></div> */}
-//         <div className="texts">
-//           <h1 className="caption">Everthing you need in a single place</h1>
-//           <p className="desc">Lorem ipsum dolor sit amet, consectetur elit.</p>
-//           <button className="c-btn">Contact Us </button>
+//         <div className="carousel-slide">
+//           <img src={img3} className="image" />
 //         </div>
-//         {/* <div className="picture"> */}
-//         <img
-//           src="https://img.freepik.com/free-vector/internship-job-training-illustration_23-2148751280.jpg?w=996&t=st=1695796795~exp=1695797395~hmac=98ecbf5c6569b45b5fbee50186623a6ef28768323b1c1f95076eeb951161d3dc"
-//           alt=""
-//           className="graphic"
-//           />
-//         {/* </div> */}
-//       </div>
 //       </div>
 
 //       <div className="carousel-main">
-//       <div className="carousel-slide">
-//         {/* <img src={img1} className="image" /> */}
-//         {/* <div className="home-overlay"></div> */}
-
-//         <div className="texts">
-//           <h1 className="caption">Everthing you need in a single place</h1>
-//           <p className="desc">Lorem ipsum dolor sit amet, consectetur elit.</p>
-//           <button className="c-btn">Contact Us </button>
+//         <div className="carousel-slide">
+//           <img src={img1} className="image" />
 //         </div>
-//         <div className="picture">
-//         <img
-//           src="https://img.freepik.com/free-vector/internship-job-training-illustration_23-2148751280.jpg?w=996&t=st=1695796795~exp=1695797395~hmac=98ecbf5c6569b45b5fbee50186623a6ef28768323b1c1f95076eeb951161d3dc"
-//           alt=""
-//           className="graphic"
-//           />
-//         </div>
-//       </div>
 //       </div>
 
 //       <div className="carousel-main">
-//       <div className="carousel-slide">
-//         {/* <img src={img2} className="image" /> */}
-//         {/* <div className="home-overlay"></div> */}
-
-//         <div className="texts">
-//           <h1 className="caption">Everthing you need in a single place</h1>
-//           <p className="desc">Lorem ipsum dolor sit amet, consectetur elit.</p>
-//           <button className="c-btn">Contact Us </button>
+//         <div className="carousel-slide">
+//           <img src={img2} className="image" />
 //         </div>
-//         <div className="picture">
-//         <img
-//           src="https://img.freepik.com/free-vector/internship-job-training-illustration_23-2148751280.jpg?w=996&t=st=1695796795~exp=1695797395~hmac=98ecbf5c6569b45b5fbee50186623a6ef28768323b1c1f95076eeb951161d3dc"
-//           alt=""
-//           className="graphic"
-//         />
-//         </div>
-//           </div>
 //       </div>
 //     </Carousel>
 //   );
@@ -88,65 +46,61 @@
 
 // export default HomeSlider;
 
+////-------------Another
+//------------
+
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
-import sliderImg from "../../../images/homeSlider/slider-one.jpg";
-import sliderImgTwo from "../../../images/homeSlider/slider-two.jpg";
+import sliderImg from "../../../images/homeSlider/first-slider.jpeg";
+import sliderImgTwo from "../../../images/homeSlider/second-slider.jpeg";
 import sliderImgThree from "../../../images/homeSlider/slider-three.jpg";
 import bgImg from "../../../images/homeSlider/bg-four.png";
 
 function HomeSlider(props) {
   var items = [
     {
-      name: "Everthing you need in a single place",
-      description:
-        "Counseling, test preparation, application processing, career guidance, and much more... ",
-      img: sliderImg,
-    },
-    {
-      name: "Best in Nepal, to study Abroad",
-      description: "Place your trust in the authentic touch...",
       img: sliderImgTwo,
     },
     {
-      name: "Cambridge is here to guide You",
-      description:
-        "We are here to support and guide you in your next endeavors.",
-      img: sliderImgThree,
+      img: sliderImg,
     },
   ];
 
   return (
-    <Carousel navButtonsAlwaysInvisible={true}>
-      {items.map((item, i) => (
-        <Item key={i} item={item} />
+    <Carousel navButtonsAlwaysInvisible={true} className="carousel-comp">
+      {items.map((item) => (
+        // <div
+        //   className="carousel-wrapper"
+        //   // style={{
+        //   //   backgroundImage: `url(${bgImg})`,
+        //   // }}
+        // >
+        <img
+          src={item.img}
+          alt=""
+          className="slide-img"
+          // style={{ width: "100%" , maxHeight: '500px'}}
+        />
+        // </div>
       ))}
     </Carousel>
   );
 }
 
-function Item(props) {
-  return (
-    <Paper elevation={0}>
-      <div
-        className="carousel-wrapper"
-        style={{
-          backgroundImage: `url(${bgImg})`,
-        }}
-      >
-        <div className="carousel-slide">
-          <div className="texts">
-            <h2 className="caption">{props.item.name}</h2>
-            <p className="desc">{props.item.description}</p>
-            <button className="c-btn">Contact Us </button>
-          </div>
-          <div className="picture" data-aos="fade-left">
-            <img src={props.item.img} alt="" className="graphic" />
-          </div>
-        </div>
-      </div>
-    </Paper>
-  );
-}
+// function Item(props) {
+//   return (
+//     <Paper elevation={0}>
+//       <div
+//         className="carousel-wrapper"
+//         // style={{
+//         //   backgroundImage: `url(${bgImg})`,
+//         // }}
+//       >
+//         <img src={props.item.img} alt="" className="silde-img" />
+
+//       </div>
+//     </Paper>
+//   );
+// }
 export default HomeSlider;

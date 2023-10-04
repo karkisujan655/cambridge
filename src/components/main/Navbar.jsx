@@ -48,8 +48,8 @@ export default function Navbar() {
     },
     {
       id: 3,
-      title: "IELTS/PTE Prepration",
-      path: "/preparation-ielts-pte",
+      title: " Prepration Classes",
+      path: "/preparation-classes",
       sublinks: [
         {
           id: 0,

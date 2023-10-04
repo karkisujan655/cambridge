@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import backgroundImg from "../../../../images/background/bg.png";
 import PartnerCard from "./PartnerCard";
 import img1 from "../../../../images/partner/p1.png";
@@ -17,7 +17,12 @@ import img13 from "../../../../images/partner/p13.png";
 import img14 from "../../../../images/partner/p14.png";
 
 const Partner = ({ pDetails }) => {
+  const [sliceNum, setSliceNum] = useState(13);
 
+  useEffect(() => {
+    window.innerWidth < 550 ? setSliceNum(4) : setSliceNum(13);
+  }, []);
+  
   return (
     <div
       className="partner"
@@ -27,9 +32,11 @@ const Partner = ({ pDetails }) => {
         <h1 className="head">Partner Institution/Universities</h1>
         <div className="cards-wrapper" data-aos="zoom-in">
           {pDetails &&
-            pDetails.map((item, idx) => (
-              <PartnerCard key={idx} item={item && item} />
-            ))}
+            pDetails
+              .slice(0, sliceNum && sliceNum)
+              .map((item, idx) => (
+                <PartnerCard key={idx} item={item && item} />
+              ))}
         </div>
       </div>
     </div>

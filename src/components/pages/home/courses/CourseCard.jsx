@@ -1,5 +1,6 @@
 import React from "react";
 import cardImg from "../../../../images/card.jpg";
+import { useNavigate } from "react-router-dom";
 
 const CourseCard = ({ cardDetail }) => {
   const {
@@ -7,9 +8,17 @@ const CourseCard = ({ cardDetail }) => {
     courseName = "",
     desc = "",
     courseImg = "",
+    path = "",
   } = cardDetail && cardDetail;
+
+  const navigate = useNavigate();
   return (
-    <div className="course-card">
+    <div
+      className="course-card"
+      onClick={() => {
+        path && navigate(`/preparation-classes/${path}`);
+      }}
+    >
       <div
         className="course-img"
         style={{ backgroundImage: `url(${courseImg})` }}

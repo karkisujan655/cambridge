@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../images/banner/banner.jpg";
+import img from "../../../images/banner/banner.jpeg";
 import { GiArcheryTarget } from "react-icons/gi";
 import { GiStairsGoal } from "react-icons/gi";
 

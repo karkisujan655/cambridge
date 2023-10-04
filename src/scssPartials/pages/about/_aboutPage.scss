@@ -1,7 +1,5 @@
 .about-page {
   width: 100%;
-  height: 2900px;
-  // background-color: "peru";
 
   .banner {
     height: 340px;
@@ -34,14 +32,14 @@
         color: $primaryGrey;
         padding: 10px 10px 0;
         text-align: justify;
-        font-size: 20px;
+        font-size: 16px;
         font-family: Roboto;
       }
     }
   }
   .mission-vision {
     width: 100%;
-    height: 400px;
+    // height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +47,7 @@
     margin-top: 80px;
     .mv-box {
       width: 1284.5px;
-      height: 400px;
+      height: 240px;
 
       padding: 0 45px;
       display: flex;
@@ -58,7 +56,7 @@
         color: $primaryDarkBlue;
       }
       .mission {
-        height: 300px;
+        // height: 300px;
         width: 550px;
 
         .mission-heading {
@@ -72,12 +70,13 @@
           color: $primaryGrey;
           padding: 10px;
           text-align: justify;
-          font-size: 20px;
+          font-size: 16px;
+
           font-family: Roboto;
         }
       }
       .vision {
-        height: 300px;
+        // height: 300px;
         width: 550px;
         .vision-heading {
           color: $primaryDarkerBlue;
@@ -90,7 +89,8 @@
           color: $primaryGrey;
           padding: 10px;
           text-align: justify;
-          font-size: 20px;
+          font-size: 16px;
+
           font-family: Roboto;
         }
       }
@@ -104,7 +104,7 @@
     flex-direction: column;
     align-items: center;
     color: $primaryDarkerBlue;
-    margin-top: 80px;
+    margin-top: 120px;
 
     .experience-heading {
       // padding: 0px;
@@ -112,7 +112,8 @@
       padding-bottom: 10px;
     }
     .experience-desc {
-      font-size: 20px;
+      font-size: 16px;
+
       color: $primaryGrey;
       padding: 10px 45px;
       text-align: justify;
@@ -135,7 +136,8 @@
       padding-bottom: 10px;
     }
     .consulant-desc {
-      font-size: 20px;
+      font-size: 16px;
+
       color: $primaryGrey;
       padding: 10px 45px;
       text-align: justify;
@@ -158,7 +160,8 @@
       padding-bottom: 10px;
     }
     .success-desc {
-      font-size: 20px;
+      font-size: 16px;
+
       color: $primaryGrey;
       padding: 10px 45px;
       text-align: justify;

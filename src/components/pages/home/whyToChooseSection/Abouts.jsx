@@ -44,15 +44,15 @@ const Abouts = () => {
     >
       <div className="contents-wrapper">
         {/* <div className="heading-wrapper"> */}
-          <h1 className="heading">
-            <span className="highlight-head"> Why to choose </span> Cambridge
-            Institute ?
-          </h1>
-          {/* <div className="under-line" style={{ height: "1px" }}></div> */}
-          <div className="sub-head">
-            As the leading consultancy in Nepal, we boast a proficient team and
-            advanced classes.
-          </div>
+        <h1 className="heading">
+          <span className="highlight-head"> Why to choose </span> Cambridge
+          Institute ?
+        </h1>
+        {/* <div className="under-line" style={{ height: "1px" }}></div> */}
+        <div className="sub-head">
+          As the leading consultancy in Nepal, we boast a proficient team and
+          advanced classes.
+        </div>
         {/* </div> */}
         <div className="cards-wrapper" data-aos="zoom-in">
           {cards && cards}

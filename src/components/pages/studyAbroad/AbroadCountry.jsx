@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
-import banner from "../../../images/banner/abroad.png";
+import banner from "../../../images/banner/abroadImg.jpeg";
 import aus from "../../../images/studyAbroad/aus.jpg";
 import std from "../../../images/studyAbroad/aus-study.webp";
 import applyAus from "../../../images/studyAbroad/std-apply.jpg";
@@ -16,38 +16,106 @@ import usa from "../../../images/studyAbroad/usa-page.jpg";
 const AbroadCountry = () => {
   const { countrySlug } = useParams();
 
-  const menuItems = [
-    {
-      id: 0,
-      title: "Why Study in Australia",
-      sectionLink: "why",
-    },
-    {
-      id: 1,
-      title: "Universities/Institutions",
-      sectionLink: "university",
-    },
-    {
-      id: 2,
-      title: "Cost",
-      sectionLink: "cost",
-    },
-    {
-      id: 3,
-      title: "Scholorship",
-      sectionLink: "scholorship",
-    },
-    {
-      id: 4,
-      title: "Apply Process",
-      sectionLink: "apply",
-    },
-    {
-      id: 5,
-      title: "Requirements",
-      sectionLink: "requirements",
-    },
-  ];
+  const menuItems = {
+    australia: [
+      {
+        id: 0,
+        title: "Why Study in Australia",
+        sectionLink: "why",
+      },
+      // {
+      //   id: 1,
+      //   title: "Universities/Institutions",
+      //   sectionLink: "university",
+      // },
+      {
+        id: 2,
+        title: "Cost",
+        sectionLink: "cost",
+      },
+      {
+        id: 3,
+        title: "Scholarship",
+        sectionLink: "scholorship",
+      },
+      {
+        id: 4,
+        title: "Apply Process",
+        sectionLink: "apply",
+      },
+      {
+        id: 5,
+        title: "Requirements",
+        sectionLink: "requirements",
+      },
+    ],
+    canada: [
+      {
+        id: 0,
+        title: "Why Study in Canada",
+        sectionLink: "why",
+      },
+      {
+        id: 1,
+        title: "Universities/Institutions",
+        sectionLink: "university",
+      },
+      {
+        id: 2,
+        title: "Cost",
+        sectionLink: "cost",
+      },
+      {
+        id: 3,
+        title: "Scholorship",
+        sectionLink: "scholorship",
+      },
+      {
+        id: 4,
+        title: "Apply Process",
+        sectionLink: "apply",
+      },
+      {
+        id: 5,
+        title: "Requirements",
+        sectionLink: "requirements",
+      },
+    ],
+    usa: [
+      {
+        id: 0,
+        title: "Why Study in USA",
+        sectionLink: "why",
+      },
+      {
+        id: 1,
+        title: "Universities/Institutions",
+        sectionLink: "university",
+      },
+      {
+        id: 2,
+        title: "Cost",
+        sectionLink: "cost",
+      },
+      {
+        id: 3,
+        title: "Scholorship",
+        sectionLink: "scholorship",
+      },
+      {
+        id: 4,
+        title: "Apply Process",
+        sectionLink: "apply",
+      },
+      {
+        id: 5,
+        title: "Requirements",
+        sectionLink: "requirements",
+      },
+    ],
+  };
+
+  const selectedCountryNav = menuItems[countrySlug && countrySlug];
 
   const x = () => {
     if (countrySlug === "australia") {
@@ -78,7 +146,7 @@ const AbroadCountry = () => {
               makes students dream about their future in Australia.
             </p>
           </div>
-          <div className="university" id="university">
+          {/* <div className="university" id="university">
             <h2 className="aus-why-heading">
               List of Universities/Institutions in the Australia
             </h2>
@@ -97,7 +165,7 @@ const AbroadCountry = () => {
               <p className="aus-uni-desc">• University of Waterloo</p>
               <p className="aus-uni-desc">• Vancouver Island University</p>
             </div>
-          </div>
+          </div> */}
           <div className="cost" id="cost">
             <h2 className="aus-why-heading">
               Education Cost for Studying in Australia
@@ -269,7 +337,7 @@ const AbroadCountry = () => {
               abundant research opportunities.{" "}
             </p>
           </div>
-          <div className="why-study">
+          <div className="why-study" id="why">
             <img src={can} alt="" className="can-img" />
             <h2 className="can-why-heading"> Why to Study in Canada ?</h2>
             <p>
@@ -286,7 +354,7 @@ const AbroadCountry = () => {
               to study in Canada, read ahead and find out more.
             </p>
           </div>
-          <h2 className="can-why-heading">
+          <h2 className="can-why-heading" id="university">
             List of Universities/Institutions in the Canada
           </h2>
           <div className="uni">
@@ -304,7 +372,7 @@ const AbroadCountry = () => {
             <p className="can-uni-desc">• University of Waterloo</p>
             <p className="can-uni-desc">• Vancouver Island University</p>
           </div>
-          <div className="cost">
+          <div className="cost" id="cost">
             <h2 className="can-why-heading">
               Education Cost for Studying in Canada
             </h2>
@@ -329,7 +397,7 @@ const AbroadCountry = () => {
               location, university and individual.
             </p>
           </div>
-          <div className="scholorship">
+          <div className="scholorship" id="scholorship">
             <h2 className="can-why-heading">Scholarships to Study in Canada</h2>
             <p className="can-scholor-desc">
               In order to capitalize on the available scholarships in Canada, we
@@ -348,7 +416,7 @@ const AbroadCountry = () => {
               September
             </p>
           </div>
-          <div className="apply">
+          <div className="apply" id="apply">
             <h2 className="can-why-heading">How to apply for Canada?</h2>
             <p>
               To learn about the detailed description of admission process and
@@ -417,7 +485,7 @@ const AbroadCountry = () => {
               at an overseas university.
             </p>
           </div>
-          <div className="requirements">
+          <div className="requirements" id="requirements">
             <h2 className="can-why-heading">
               Student Visa Requirements for Canada
             </h2>
@@ -465,7 +533,7 @@ const AbroadCountry = () => {
     } else {
       return (
         <div className="usa">
-          <div className="why-study">
+          <div className="why-study" id="why">
             <div className="usa-info">
               <h1 className="study-usa-heading">Study America</h1>
               <p>
@@ -491,25 +559,27 @@ const AbroadCountry = () => {
               to study in America, read ahead and find out more.
             </p>
           </div>
-          <h2 className="usa-why-heading">
-            List of Universities/Institutions in the America
-          </h2>
-          <div className="uni">
-            <p className="usa-uni-desc">• Centennial College</p>
-            <p className="usa-uni-desc">• College of New Caledonia</p>
-            <p className="usa-uni-desc">• Fanshawe College</p>
-            <p className="usa-uni-desc">• George Brown College</p>
-            <p className="usa-uni-desc">• Humber College</p>
-            <p className="usa-uni-desc">• Kings University College</p>
-            <p className="usa-uni-desc">• Langara College</p>
-            <p className="usa-uni-desc">• NAVITAS-America</p>
-            <p className="usa-uni-desc">• Thomas University</p>
-            <p className="usa-uni-desc">• Trent University</p>
-            <p className="usa-uni-desc">• University of Manitoba</p>
-            <p className="usa-uni-desc">• University of Waterloo</p>
-            <p className="usa-uni-desc">• Vancouver Island University</p>
+          <div className="university" id="university">
+            <h2 className="usa-why-heading">
+              List of Universities/Institutions in the America
+            </h2>
+            <div className="uni">
+              <p className="usa-uni-desc">• Centennial College</p>
+              <p className="usa-uni-desc">• College of New Caledonia</p>
+              <p className="usa-uni-desc">• Fanshawe College</p>
+              <p className="usa-uni-desc">• George Brown College</p>
+              <p className="usa-uni-desc">• Humber College</p>
+              <p className="usa-uni-desc">• Kings University College</p>
+              <p className="usa-uni-desc">• Langara College</p>
+              <p className="usa-uni-desc">• NAVITAS-America</p>
+              <p className="usa-uni-desc">• Thomas University</p>
+              <p className="usa-uni-desc">• Trent University</p>
+              <p className="usa-uni-desc">• University of Manitoba</p>
+              <p className="usa-uni-desc">• University of Waterloo</p>
+              <p className="usa-uni-desc">• Vancouver Island University</p>
+            </div>
           </div>
-          <div className="cost">
+          <div className="cost" id="cost">
             <h2 className="usa-why-heading">
               Education Cost for Studying in America
             </h2>
@@ -534,7 +604,7 @@ const AbroadCountry = () => {
               location, university and individual.
             </p>
           </div>
-          <div className="scholorship">
+          <div className="scholorship" id="scholorship">
             <h2 className="usa-why-heading">
               Scholarships to Study in America
             </h2>
@@ -555,7 +625,7 @@ const AbroadCountry = () => {
               September
             </p>
           </div>
-          <div className="apply">
+          <div className="apply" id="apply">
             <h2 className="usa-why-heading">How to apply for America?</h2>
             <p>
               To learn about the detailed description of admission process and
@@ -624,7 +694,7 @@ const AbroadCountry = () => {
               at an overseas university.
             </p>
           </div>
-          <div className="requirements">
+          <div className="requirements" id="requirements">
             <h2 className="usa-why-heading">
               Student Visa Requirements for America
             </h2>
@@ -681,15 +751,16 @@ const AbroadCountry = () => {
         </div>
         <div className="menu-nav">
           <div className="nav-items">
-            {menuItems.map((menuItem) => {
-              const { id = "", title = "", sectionLink = "" } = menuItem;
-              return (
-                <a className=" option" key={id} href={`#${sectionLink}`}>
-                  {/* href="#requirements" */}
-                  {title}
-                </a>
-              );
-            })}
+            {selectedCountryNav &&
+              selectedCountryNav.map((menuItem) => {
+                const { id = "", title = "", sectionLink = "" } = menuItem;
+                return (
+                  <a className=" option" key={id} href={`#${sectionLink}`}>
+                    {/* href="#requirements" */}
+                    {title}
+                  </a>
+                );
+              })}
           </div>
         </div>
         <div className="study">

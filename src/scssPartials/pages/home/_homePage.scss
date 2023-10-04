@@ -11,10 +11,7 @@
 @import "./news/_newsCarousel";
 @import "./gallery/gallery";
 
-.home-slider {
-  // background-color: green;
-  // height: 200px !important;
-  width: 100%;
+.home-page {
+  overflow-x: hidden;
+ 
 }
-
-

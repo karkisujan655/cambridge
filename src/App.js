@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Suspense } from "react";
 import "./App.scss";
 import Navbar from "./components/main/Navbar";
 import HomePage from "./components/pages/home/HomePage";
@@ -11,31 +12,37 @@ import Collapse from "./components/main/Accordion";
 import Preparation from "./components/pages/preparation/PreparationIeltsPte";
 import Resources from "./components/pages/resources/Resources";
 import Contact from "./components/pages/contact/Contact";
+import ScrollToTopBtn from "./components/forAll/ScrollToTopBtn";
+import ScrollToTop from "./components/forAll/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/">
-            <Route index element={<HomePage />} />
-            <Route path="about-us" element={<AboutUs />} />
-            <Route
-              path="study-abroad/:countrySlug"
-              element={<AbroadCountry />}
-            />
-            <Route
-              path="preparation-ielts-pte/:preparationSlug"
-              element={<Preparation />}
-            />
-            <Route path="resources/:resourcesSlug" element={<Resources />} />
+        <Suspense fallback="Loading...">
+          <Navbar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/">
+              <Route index element={<HomePage />} />
+              <Route path="about-us" element={<AboutUs />} />
+              <Route
+                path="study-abroad/:countrySlug"
+                element={<AbroadCountry />}
+              />
+              <Route
+                path="preparation-classes/:preparationSlug"
+                element={<Preparation />}
+              />
+              <Route path="resources/:resourcesSlug" element={<Resources />} />
 
-            <Route path="contact-us" element={<Contact />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-        <Footer />
+              <Route path="contact-us" element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+          <ScrollToTopBtn />
+          <Footer />
+        </Suspense>
       </BrowserRouter>
     </>
   );

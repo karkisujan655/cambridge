@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import ieltsImg from "../../../images/preparation/ielts.jpg";
 import pteImg from "../../../images/preparation/pte.jpg";
-import banner from "../../../images/preparation/banner.jpg";
+import banner from "../../../images/preparation/banner.jpeg";
 import { BiHeadphone } from "react-icons/bi";
 import { RxReader } from "react-icons/rx";
 import { TfiWrite } from "react-icons/tfi";

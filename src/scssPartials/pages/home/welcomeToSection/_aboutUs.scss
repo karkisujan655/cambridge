@@ -29,7 +29,7 @@
         color: Black;
         word-spacing: 8px;
         width: 100%;
-        text-align: justify;
+        // text-align: justify;
         font-family: "Roboto", sans-serif;
         overflow: hidden;
         display: -webkit-box;
@@ -90,7 +90,7 @@
 }
 @media screen and (max-width: 650px) {
   .main {
-    margin-top: 60px;
+    margin-top: 10px;
     padding: 15px;
   }
 }
