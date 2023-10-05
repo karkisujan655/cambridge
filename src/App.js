@@ -8,18 +8,21 @@ import AboutUs from "./components/pages/about/AboutPage";
 import NoPage from "./components/pages/error/Oops";
 import AbroadCountry from "./components/pages/studyAbroad/AbroadCountry";
 // import Sidebar from "./components/main/Sidebar";
-import Collapse from "./components/main/Accordion";
+// import Collapse from "./components/main/Accordion";
 import Preparation from "./components/pages/preparation/PreparationIeltsPte";
 import Resources from "./components/pages/resources/Resources";
 import Contact from "./components/pages/contact/Contact";
 import ScrollToTopBtn from "./components/forAll/ScrollToTopBtn";
 import ScrollToTop from "./components/forAll/ScrollToTop";
+import Popup from "./components/forAll/Popup";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Suspense fallback="Loading...">
+          <Popup />
+
           <Navbar />
           <ScrollToTop />
           <Routes>

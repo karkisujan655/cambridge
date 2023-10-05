@@ -5,34 +5,31 @@ import WhyToChoose from "./whyToChooseSection/Abouts";
 import Country from "./country/Highlight";
 // import Testimonials from "./teamMember/Testimonials";
 import TeamMember from "./teamMember/TeamMembers";
-import Footer from "../../main/footer/Footer";
+// import Footer from "../../main/footer/Footer";
 import WelcomeToSection from "./welcomeToSection/AboutUs";
 import Partner from "./partner/Partner";
-import Blog from "./blogs/Blog";
+// import Blog from "./blogs/Blog";
 import NewsCarousel from "./news/NewsCarousel";
-import Gallery from "./gallery/Gallery";
+// import Gallery from "./gallery/Gallery";
+import Popup from "../../forAll/Popup";
 
 const HomePage = () => {
   return (
-    <div className="home-page">
-      <div className="h-slider">
-        {/* <div className="home-slider"> */}
-        <HomeSlider />
-        {/* </div> */}
+    <>
+      {/* <Popup /> */}
+      <div className="home-page">
+        <div className="h-slider">
+          <HomeSlider />
+        </div>
+        <WelcomeToSection />
+        <Country />
+        <WhyToChoose />
+        <Courses />
+        <Partner />
+        <TeamMember />
+        <NewsCarousel />
       </div>
-      <WelcomeToSection />
-      <Country />
-
-      <WhyToChoose />
-      <Courses />
-      <Partner />
-
-      <TeamMember />
-      {/* <Blog /> */}
-
-      <NewsCarousel />
-      {/* <Gallery /> */}
-    </div>
+    </>
   );
 };
 
