@@ -176,18 +176,18 @@ export default function Navbar() {
           </div>
           <BiMenu
             className="toggle-icon"
-            // onClick={() => {
-            //   setState((prev) => ({ ...prev, left: true }));
-            // }}
+            onClick={() => {
+              setState((prev) => ({ ...prev, left: true }));
+            }}
           />
         </div>
         <div className="top-full"></div>
       </div>
-      {/* <Sidebar
+      <Sidebar
         state={state && state}
         setState={setState && setState}
         menuItems={menuItems && menuItems}
-      /> */}
+      />
     </>
   );
 }
