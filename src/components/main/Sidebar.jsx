@@ -39,7 +39,7 @@ export default function TemporaryDrawer({ state, setState, menuItems }) {
           onClick={() => {
             navigate("/");
           }}
-          />
+        />
         {/* </div> */}
         <RxCross2 className="cancel" />
       </div>
