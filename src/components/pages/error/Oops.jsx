@@ -5,8 +5,8 @@ const Oops = () => {
   return (
     <div className="no-page">
       <img src={boy} alt="" className="boy" />
-      Stay Tuned,
-      <p>Exciting updates are on the way!!!</p>
+      Sorry,
+      <p>Page NOt Found!!!</p>
     </div>
   );
 };

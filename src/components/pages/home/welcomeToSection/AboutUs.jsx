@@ -10,9 +10,7 @@ const AboutUs = () => {
         </div>
         <div className="desc" data-aos="fade-left">
           <h1 className="head">
-            {" "}
-            <span className="head-highlight">Welcome to</span> Cambridge
-            Instutite of Technology
+            Welcome to Cambridge Instutite <br /> of Technology
           </h1>
           <p className="message">
             We are the firm that has demonstrated a ceaseless commitment to the
@@ -24,10 +22,9 @@ const AboutUs = () => {
             and India. Cambridge institute of Technology have a team of
             experienced and dedicated counselors who handle every enquiry with
             care and make everything clear before students as well their
-            parents. We guide and support students from beginning (counseling)
-            to the end (pre-departure assistance) of study visa process and
-            warmly welcome their queries.
+            parents.
           </p>
+          <button className="abt-btn">See More</button>
         </div>
       </div>
     </div>

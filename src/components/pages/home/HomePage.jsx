@@ -25,7 +25,7 @@ const HomePage = () => {
         <Country />
         <WhyToChoose />
         <Courses />
-        <Partner />
+        {/* <Partner /> */}
         <TeamMember />
         <NewsCarousel />
       </div>

@@ -28,14 +28,19 @@ export default function TemporaryDrawer({ state, setState, menuItems }) {
       style={{ backgroundColor: "pink !important", width: "350px !important" }}
     >
       <div className="sidebar-logo">
-        <div
+        {/* <div
           className="logo"
+         
+        > */}
+        <img
+          src={logo}
+          alt=""
+          className="side-logo"
           onClick={() => {
             navigate("/");
           }}
-        >
-          <img src={logo} alt="" className="side-logo" />
-        </div>
+          />
+        {/* </div> */}
         <RxCross2 className="cancel" />
       </div>
       <Divider />

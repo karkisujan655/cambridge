@@ -564,19 +564,34 @@ const AbroadCountry = () => {
               List of Universities/Institutions in the America
             </h2>
             <div className="uni">
-              <p className="usa-uni-desc">• Centennial College</p>
-              <p className="usa-uni-desc">• College of New Caledonia</p>
-              <p className="usa-uni-desc">• Fanshawe College</p>
-              <p className="usa-uni-desc">• George Brown College</p>
-              <p className="usa-uni-desc">• Humber College</p>
-              <p className="usa-uni-desc">• Kings University College</p>
-              <p className="usa-uni-desc">• Langara College</p>
-              <p className="usa-uni-desc">• NAVITAS-America</p>
-              <p className="usa-uni-desc">• Thomas University</p>
-              <p className="usa-uni-desc">• Trent University</p>
-              <p className="usa-uni-desc">• University of Manitoba</p>
-              <p className="usa-uni-desc">• University of Waterloo</p>
-              <p className="usa-uni-desc">• Vancouver Island University</p>
+              <p className="usa-uni-desc">• California Baptist University</p>
+              <p className="usa-uni-desc">
+                • California State University Chico
+              </p>
+              <p className="usa-uni-desc">
+                • California State University Fresnoge
+              </p>
+
+              <p className="usa-uni-desc">• Eastern Kentucky University</p>
+              <p className="usa-uni-desc">
+                • Hult International Business School
+              </p>
+              <p className="usa-uni-desc">• INTO – Marshall University</p>
+              <p className="usa-uni-desc">• Le Cordon Bleu USA</p>
+              <p className="usa-uni-desc">• Marist College</p>
+              <p className="usa-uni-desc">• Mercer University</p>
+              <p className="usa-uni-desc">• navitas-USA</p>
+              <p className="usa-uni-desc">• New York Film Academy</p>
+              <p className="usa-uni-desc">• Oklahoma City University</p>
+              <p className="usa-uni-desc">
+                • Southern New Hampshire University
+              </p>
+              <p className="usa-uni-desc">• Study Group-USA</p>
+              <p className="usa-uni-desc">• University of Cincinnati (UC)</p>
+              <p className="usa-uni-desc">• Upper Iowa University</p>
+              <p className="usa-uni-desc">• Washington College</p>
+              <p className="usa-uni-desc">• Western Kentucky University</p>
+              <p className="usa-uni-desc">• California Baptist University</p>
             </div>
           </div>
           <div className="cost" id="cost">
@@ -609,11 +624,9 @@ const AbroadCountry = () => {
               Scholarships to Study in America
             </h2>
             <p className="usa-scholor-desc">
-              In order to capitalize on the available scholarships in America,
-              we advise you to visit our offices as early as possible. We will
-              provide you with complete information on the America scholarship
-              process. If we find you eligible for any scholarships category,
-              you will be granted with one.
+              USA provide students with varieties of scholarships and we assist
+              them with the right course and scholarship information, along with
+              further assistance in submitting an application for visa approval.
             </p>
             <p className="usa-scholor-desc">
               Students considering America as abroad study are recommended to
@@ -621,8 +634,8 @@ const AbroadCountry = () => {
               Scholarship deadlines vary amongst institutions.
             </p>
             <p className="usa-scholor-desc">
-              <span className="scholor-span">Intakes</span>: January, May &
-              September
+              <span className="scholor-span">Intakes</span>: January/Spring,
+              May/Summer and September/Fall intake
             </p>
           </div>
           <div className="apply" id="apply">
@@ -705,8 +718,8 @@ const AbroadCountry = () => {
               Mark Sheets including Backlogs (Resits){" "}
             </p>
             <p className="apply-desc">
-              • Evidence of English Language proficiency tests e.g. IELTS,
-              TOEFL, etc.
+              • Evidence of English Language proficiency tests e.g. SAT, TOEFL
+              etc.
             </p>
             <p className="apply-desc">
               • Standardized Tests e.g. GMAT, GRE (where necessary for the
@@ -730,7 +743,7 @@ const AbroadCountry = () => {
             <p className="apply-desc">
               • Other Certificates & Achievements of Extracurricular Activities
             </p>
-            <p className="applcountrySlugy-desc-note">
+            <p className="apply-desc-note">
               {" "}
               Note: Documents required for individual universities and
               individual courses in America may vary. For more details about the

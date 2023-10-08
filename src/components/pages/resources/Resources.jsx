@@ -137,7 +137,7 @@ const Resources = () => {
       return (
         <div className="interview">
           <h1 className="interview-title">Possible Interview Questions</h1>
-          <h3 className="guide-title">Top Seven Interview Questions </h3>
+          <h3 className="guide-title">Top Interview Questions </h3>
           <p className="desc">
             ✔ Why did you choose this University/Instituion for your further
             studies?

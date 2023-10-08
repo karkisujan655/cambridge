@@ -19,43 +19,43 @@ const Highlight = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 6,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 6,
+      items: 4,
     },
     a: {
       breakpoint: { max: 1065, min: 950 },
-      items: 5,
+      items: 4,
     },
     b: {
       breakpoint: { max: 950, min: 820 },
-      items: 6,
+      items: 4,
     },
     c: {
       breakpoint: { max: 820, min: 0 },
-      items: 5.1,
+      items: 4,
     },
     d: {
       breakpoint: { max: 690, min: 480 },
-      items: 4.2,
+      items: 3.2,
     },
     e: {
       breakpoint: { max: 480, min: 465 },
-      items: 4.1,
+      items: 3.1,
     },
     f: {
       breakpoint: { max: 465, min: 435 },
-      items: 3.8,
+      items: 2.8,
     },
     g: {
       breakpoint: { max: 435, min: 340 },
-      items: 3.4,
+      items: 2.4,
     },
     h: {
       breakpoint: { max: 340, min: 0 },
-      items: 3.1,
+      items: 2.1,
     },
   };
   const carouselSettings = {
@@ -92,22 +92,6 @@ const Highlight = () => {
       id: 0,
       flagImg: uk,
       // desc: "Australia",
-    },
-    {
-      id: 3,
-      flagImg: japan,
-      // desc: "USA",
-    },
-
-    {
-      id: 2,
-      flagImg: india,
-      // desc: "USA",
-    },
-    {
-      id: 2,
-      flagImg: dubai,
-      // desc: "USA",
     },
   ];
 

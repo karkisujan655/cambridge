@@ -27,6 +27,7 @@ const TeamMembers = ({ teamMembers }) => {
           {mCard && mCard}
         </div>
       </div>
+      <button className="seebtn">See More</button>
     </div>
   );
 };
