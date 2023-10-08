@@ -8,11 +8,11 @@ import { BiMenu } from "react-icons/bi";
 import Sidebar from "./Sidebar";
 
 export default function Navbar() {
-  const [state, setState] = useState({
-    left: false,
-  });
-
   const [isDropdownContainer, setIsDropdownContainer] = useState("");
+  const [sidebarClass, setSidebarClass] = useState("block");
+  sidebarClass === "block"
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "auto");
 
   const navigate = useNavigate();
 
@@ -174,7 +174,6 @@ export default function Navbar() {
                                   }}
                                   key={id}
                                   className="nav-link"
-
                                   // to={`${navlinkPath}/${path}`}
                                   // onClick={handleContainerContentClick}
                                 >
@@ -188,7 +187,6 @@ export default function Navbar() {
                     );
                   }
                 })}
-
                 <span>
                   <button className="btn">Apply Now</button>{" "}
                 </span>
@@ -198,15 +196,23 @@ export default function Navbar() {
           <BiMenu
             className="toggle-icon"
             onClick={() => {
-              setState((prev) => ({ ...prev, left: true }));
+              setSidebarClass("block");
             }}
           />
         </div>
         <div className="top-full"></div>
       </div>
+      {sidebarClass === "block" && (
+        <div
+          className="back-overlay"
+          onClick={() => {
+            setSidebarClass("none");
+          }}
+        ></div>
+      )}
       <Sidebar
-        state={state && state}
-        setState={setState && setState}
+        sidebarClass={sidebarClass}
+        setSidebarClass={setSidebarClass}
         menuItems={menuItems && menuItems}
       />
     </>

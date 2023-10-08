@@ -164,10 +164,7 @@
       width: 30px;
       color: $primaryDarkerBlue;
       cursor: pointer;
-      transition: 0.2s;
-      &:hover {
-        color: $primaryOrange;
-      }
+      color: #fff;
     }
     //responsive-start------------
     @media screen and (max-width: 1160px) {
