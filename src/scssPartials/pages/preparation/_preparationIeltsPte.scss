@@ -35,7 +35,7 @@
       }
       .ieltsImg {
         background-color: yellowgreen;
-        height: 400px;
+        // height: 400px;
         width: 500px;
       }
     }
@@ -88,6 +88,13 @@
         }
       }
     }
+    .note {
+      font-family: Roboto;
+      line-height: 1.5;
+      color: $primaryDarkerBlack;
+      font-weight: 500;
+      padding-top: 45px;
+    }
   }
   .content {
     width: 1284.5px;
@@ -113,7 +120,7 @@
       }
       .pteImg {
         background-color: yellowgreen;
-        height: 400px;
+        // height: 400px;
         width: 500px;
       }
     }
@@ -165,6 +172,13 @@
           }
         }
       }
+    }
+    .note {
+      font-family: Roboto;
+      line-height: 1.5;
+      color: $primaryDarkerBlack;
+      font-weight: 500;
+      padding-top: 45px;
     }
   }
 }

@@ -7,9 +7,12 @@ import { BiLogoInstagram } from "react-icons/bi";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import bgImg from "../../../images/footer/bg-img.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const [newDate, setNewDate] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const todayDate = new Date();
@@ -55,8 +58,22 @@ const Footer = () => {
             <div className="bottom-links">
               <div className="bottom-links-heading">Links</div>
               <div className="links-content">
-                <div className="links-content-gap">About</div>
-                <div className="links-content-gap">Photos</div>
+                <div
+                  className="links-content-gap"
+                  onClick={() => {
+                    navigate("/about-us");
+                  }}
+                >
+                  About
+                </div>
+                <div
+                  className="links-content-gap"
+                  onClick={() => {
+                    navigate("/gallery");
+                  }}
+                >
+                  Photos
+                </div>
                 <div className="links-content-gap">Blogs</div>
                 {/* <div className="links-content-gap">Career</div> */}
               </div>

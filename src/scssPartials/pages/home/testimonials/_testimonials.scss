@@ -58,6 +58,23 @@
       width: 100%;
     }
   }
+  .seebtn {
+    margin: 50px 0 0;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid $primaryOrange;
+    border-radius: 20px;
+    color: $primaryOrange;
+    font-size: 16px;
+    // background-color: $primaryOrange;
+    background-color: transparent;
+    transition: 0.3s;
+    &:hover {
+      background-color: $primaryOrange;
+      color: #fff;
+    }
+  }
 }
 @media screen and (max-width: 550px) {
   .team-members-page {

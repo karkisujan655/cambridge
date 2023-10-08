@@ -3,7 +3,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $primaryOrange;
+  color: #fff;
+  background-color: $primaryOrange;
+  // border-bottom: 1px solid $primaryOrange;
   .bottom-full {
     width: 1284.5px;
     display: flex;
@@ -11,11 +13,8 @@
     align-items: center;
     padding: 20px 45px;
     .logo {
-      // height: 60px;
       width: 220px;
       text-align: center;
-
-      // border: 1px solid $primaryDarkerBlue;
     }
     .nav {
       display: flex;
@@ -29,8 +28,7 @@
         justify-content: end;
         gap: 3em;
         width: 100%;
-        // padding-top: 0.3em;
-        // line-height: 40px;
+
         .social-icons {
           display: flex;
           gap: 18px;
@@ -38,15 +36,17 @@
           .icon {
             height: 20px;
             width: 20px;
-            color: $primaryDarkerBlue;
+            // color: $primaryDarkerBlue;
+            color: #fff;
+
             cursor: pointer;
           }
         }
         .right {
           display: flex;
           gap: 15px;
-          color: $primaryDarkerBlack;
-          color: $primaryDarkerBlue;
+          // color: $primaryDarkerBlue;
+          color: #fff;
           font-size: 12px;
           font-family: "Roboto", sans-serif;
           .cursor-download {
@@ -60,7 +60,6 @@
         color: $primaryDarkerBlack;
         cursor: pointer;
         padding: 5px;
-        // line-height: 70px;
         font-family: "Roboto", sans-serif;
         margin-top: 0.4em;
         .menu {
@@ -70,9 +69,7 @@
           .btn {
             cursor: pointer;
             background-color: transparent;
-            color: $primaryDarkerBlack;
-            background-color: $primaryOrange;
-            border: none;
+            border: 1px solid #fff;
             color: #fff;
             font-size: 18px;
             font-weight: 600;
@@ -80,8 +77,8 @@
           }
           .nav-link {
             text-decoration: none;
-            color: $primaryDarkerBlack;
-            color: $primaryDarkerBlue;
+            // color: $primaryDarkerBlue;
+            color: #fff;
             font-size: 1.1rem;
           }
           .nav-link:active {
@@ -100,7 +97,8 @@
           background-color: transparent;
           font-size: 1.1rem;
           border: none;
-          color: $primaryDarkerBlue;
+          // color: $primaryDarkerBlue;
+          color: #fff;
         }
 
         .dropdown {
@@ -111,10 +109,10 @@
             display: block;
           }
         }
+
         .hidden-dropdown {
           height: max-content;
           width: max-content;
-          // display: none;
           display: none;
           position: absolute;
           min-width: 200px;
@@ -132,6 +130,9 @@
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid $primaryDarkerBlue;
             background-color: #fff;
+            // background-color: red;
+            padding: 10px 0 0 10px;
+            color: $primaryDarkerBlue;
 
             a {
               padding: 5px 0;
@@ -139,11 +140,17 @@
               display: block;
               color: $primaryDarkerBlue;
               padding: 0.5em 1em;
+              // color: red;
             }
 
             .dropdown-content a:hover {
               background-color: $primaryOrange;
               color: #fff;
+            }
+
+            .nav-link {
+              margin-bottom: 10px;
+              color: $primaryDarkerBlue;
             }
           }
         }
