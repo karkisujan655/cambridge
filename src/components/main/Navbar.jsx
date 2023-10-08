@@ -11,6 +11,9 @@ export default function Navbar() {
   const [state, setState] = useState({
     left: false,
   });
+
+  const [isDropdownContainer, setIsDropdownContainer] = useState("");
+
   const navigate = useNavigate();
 
   const menuItems = [
@@ -88,6 +91,13 @@ export default function Navbar() {
     },
   ];
 
+  const handleContainerContentClick = () => {
+    setIsDropdownContainer("none");
+    setTimeout(() => {
+      setIsDropdownContainer("");
+    }, 100);
+  };
+
   return (
     <>
       <div className="header">
@@ -147,18 +157,29 @@ export default function Navbar() {
                     return (
                       <div className="dropdown" key={id}>
                         <button className="dropbtn">{title}</button>
-                        <div className="hidden-dropdown">
+                        <div
+                          className="hidden-dropdown"
+                          style={{
+                            display: isDropdownContainer,
+                          }}
+                        >
                           <div className="dropdown-content">
                             {sublinks.map((item) => {
                               const { id = "", title = "", path = "" } = item;
                               return (
-                                <NavLink
-                                  to={`${navlinkPath}/${path}`}
+                                <div
+                                  onClick={() => {
+                                    navigate(`${navlinkPath}/${path}`);
+                                    handleContainerContentClick();
+                                  }}
                                   key={id}
                                   className="nav-link"
+
+                                  // to={`${navlinkPath}/${path}`}
+                                  // onClick={handleContainerContentClick}
                                 >
                                   {title}
-                                </NavLink>
+                                </div>
                               );
                             })}
                           </div>

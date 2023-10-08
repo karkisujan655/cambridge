@@ -94,6 +94,10 @@ const PreparationIeltsPte = () => {
               </div>
             </div>
           </div>
+          <div className="note">
+            Note: You can schedule your exam date by getting in touch with us
+            977-1-4223815 | 4256776 .
+          </div>
         </div>
       );
     } else {
@@ -171,6 +175,10 @@ const PreparationIeltsPte = () => {
                 topics and tasks.
               </div>
             </div>
+          </div>
+          <div className="note">
+            Note: You can schedule your exam date by getting in touch with us
+            977-1-4223815 | 4256776 .
           </div>
         </div>
       );

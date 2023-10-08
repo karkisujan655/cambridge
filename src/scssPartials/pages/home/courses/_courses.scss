@@ -12,6 +12,9 @@
   .in-wrapper {
     width: 1284.5px;
     padding: 0 45px;
+
+    // background-color: green;
+
     .h-course {
       width: 100%;
       display: flex;
@@ -39,8 +42,9 @@
     .cards-wrapper {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2em;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5em;
+      // background-color: yellow;
     }
   }
   @media screen and (max-width: 1285px) {

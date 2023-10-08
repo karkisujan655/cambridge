@@ -1,8 +1,8 @@
 import React from "react";
 import CourseCard from "./CourseCard";
 import img2 from "../../../../images/course/ielts.jpeg";
-import img1 from "../../../../images/course/pte.jpeg";
-import img3 from "../../../../images/course/sat.jpeg";
+import img1 from "../../../../images/course/ptee.jpg";
+// import img3 from "../../../../images/course/sat.jpeg";
 // import bgImg from "../../../../images/course/bg.jpg";
 
 const Courses = () => {
@@ -12,22 +12,21 @@ const Courses = () => {
       courseName: "PTE",
       desc: "Our aim at Cambridge Institute of Technology is to help our students achieve success in the Pearson Test of English or PTE.",
       courseImg: img1,
-      path:'pte'
+      path: "pte",
     },
     {
       id: 1,
       courseName: "IELTS",
-      desc: "IELTS stands for “International English Language Testing System",
+      desc: "IELTS (International English Language Testing System) is a globally recognized English language proficiency exam used for academic and immigration purposes.",
       courseImg: img2,
-      path:'ielts'
-
+      path: "ielts",
     },
-    {
-      id: 2,
-      courseName: "SAT",
-      desc: "SAT is a standardised exam that tests high school students for their knowledge in areas of reading, analytical skills and mathematical prowess.",
-      courseImg: img3,
-    },
+    // {
+    //   id: 2,
+    //   courseName: "SAT",
+    //   desc: "SAT is a standardised exam that tests high school students for their knowledge in areas of reading, analytical skills and mathematical prowess.",
+    //   courseImg: img3,
+    // },
   ];
 
   const cards =

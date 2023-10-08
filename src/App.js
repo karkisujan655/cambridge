@@ -15,6 +15,7 @@ import Contact from "./components/pages/contact/Contact";
 import ScrollToTopBtn from "./components/forAll/ScrollToTopBtn";
 import ScrollToTop from "./components/forAll/ScrollToTop";
 import Popup from "./components/forAll/Popup";
+import Gallery from "./components/pages/gallery/Gallery";
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
               <Route path="resources/:resourcesSlug" element={<Resources />} />
 
               <Route path="contact-us" element={<Contact />} />
+
+              <Route path="gallery" element={<Gallery />} />
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
