@@ -6,7 +6,6 @@
     .banner-img {
       width: 100%;
       height: 100%;
-      filter: blur(0.5px);
     }
   }
   .intro-box {
@@ -20,7 +19,8 @@
       flex-direction: column;
       align-items: center;
       margin-top: 120px;
-      padding: 0 45px;
+      padding: 0 40px;
+
       .intro-heading {
         color: $primaryDarkerBlue;
         text-align: left;
@@ -35,28 +35,34 @@
         font-size: 16px;
         font-family: Roboto;
       }
+
+      @media screen and (max-width: 850px) {
+        margin-top: 100px;
+      }
+
+      @media screen and (max-width: 550px) {
+        margin-top: 10px;
+        .intro-heading {
+          font-size: 30px;
+        }
+      }
     }
   }
   .mission-vision {
     width: 100%;
-    // height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: red;
     margin-top: 80px;
     .mv-box {
       width: 1284.5px;
-      height: 240px;
-
-      padding: 0 45px;
+      padding: 0 40px;
       display: flex;
       justify-content: space-between;
       .mv-icon {
         color: $primaryDarkBlue;
       }
       .mission {
-        // height: 300px;
         width: 550px;
 
         .mission-heading {
@@ -76,7 +82,6 @@
         }
       }
       .vision {
-        // height: 300px;
         width: 550px;
         .vision-heading {
           color: $primaryDarkerBlue;
@@ -92,6 +97,43 @@
           font-size: 16px;
 
           font-family: Roboto;
+        }
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      .mv-box {
+        .mission {
+          width: 420px;
+        }
+        .vision {
+          width: 420px;
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .mv-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        .mission {
+          width: 100%;
+        }
+        .vision {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .mv-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        .mission {
+          width: 100%;
+          font-size: 30px;
+        }
+        .vision {
+          width: 100%;
+          font-size: 30px;
         }
       }
     }
@@ -115,10 +157,57 @@
       font-size: 16px;
 
       color: $primaryGrey;
-      padding: 10px 45px;
+      padding: 10px 40px;
       text-align: justify;
       width: 1284.5px;
       font-family: Roboto;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 100px;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 20px;
+      .experience-heading {
+        font-size: 35px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .experience-desc {
+        width: 100%;
+        padding: 10px 30px;
+      }
+    }
+    @media screen and (max-width: 770px) {
+      margin-top: 20px;
+      .experience-heading {
+        font-size: 35px;
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+      }
+      .experience-desc {
+        width: 100%;
+        padding: 10px 40px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      margin-top: 20px;
+      .experience-heading {
+        font-size: 30px;
+        padding: 0 40px;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+      }
+      .experience-desc {
+        width: 100%;
+
+        padding: 10px 40px;
+      }
     }
   }
   .consulant {
@@ -139,10 +228,39 @@
       font-size: 16px;
 
       color: $primaryGrey;
-      padding: 10px 45px;
+      padding: 10px 40px;
       text-align: justify;
       width: 1284.5px;
       font-family: Roboto;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 30px;
+      .consulant-heading {
+        font-size: 35px;
+        padding: 0 40px;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .consulant-desc {
+        width: 100%;
+        padding: 10px 40px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      margin-top: 20px;
+      .consulant-heading {
+        font-size: 30px;
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+      }
+      .consulant-desc {
+        width: 100%;
+        padding: 10px 40px;
+      }
     }
   }
   .success {
@@ -155,7 +273,6 @@
     margin-top: 80px;
 
     .success-heading {
-      // padding: 0px;
       font-size: 35px;
       padding-bottom: 10px;
     }
@@ -163,10 +280,56 @@
       font-size: 16px;
 
       color: $primaryGrey;
-      padding: 10px 45px;
+      padding: 10px 40px;
       text-align: justify;
       width: 1284.5px;
       font-family: Roboto;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 30px;
+      .success-heading {
+        font-size: 35px;
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+      }
+      .success-desc {
+        width: 100%;
+        padding: 10px 40px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      margin-top: 20px;
+      .success-heading {
+        font-size: 30px;
+        padding: 0 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .success-desc {
+        width: 100%;
+        padding: 10px 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .banner {
+      height: 210px;
+      .banner-img {
+        height: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .banner {
+      height: 145px;
+      .banner-img {
+        height: 140px;
+      }
     }
   }
 }

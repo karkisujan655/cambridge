@@ -317,4 +317,21 @@
       }
     }
   }
+  @media screen and (max-width: 850px) {
+    .country-banner {
+      height: 210px;
+      .country-banner-img {
+        height: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .country-banner {
+      height: 145px;
+      .country-banner-img {
+        height: 140px;
+      }
+    }
+  }
 }
