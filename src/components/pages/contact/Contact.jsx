@@ -102,7 +102,7 @@ const Contact = () => {
   //     <p className="email desc">{location.email}</p>
   //     <p className="address desc">{location.address}</p>
   //   </div>
-  // );
+  // ); 
 
   const x = locations.map((details) => (
     <div className="branch-box">

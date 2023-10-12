@@ -58,7 +58,6 @@
         display: flex;
         align-items: center;
         color: $primaryDarkerBlack;
-        cursor: pointer;
         padding: 5px;
         font-family: "Roboto", sans-serif;
         margin-top: 0.4em;
@@ -66,6 +65,7 @@
           display: flex;
           gap: 25px;
           align-items: center;
+
           .btn {
             cursor: pointer;
             background-color: transparent;
@@ -77,18 +77,12 @@
           }
           .nav-link {
             text-decoration: none;
-            // color: $primaryDarkerBlue;
             color: #fff;
             font-size: 1.1rem;
           }
           .nav-link:active {
             color: $primaryOrange;
           }
-          // Remove this duplicate definition
-          // .nav-link {
-          //   color: red;
-          //   background-color: #000;
-          // }
         }
 
         // -----------------dropdown----------------------
@@ -97,7 +91,6 @@
           background-color: transparent;
           font-size: 1.1rem;
           border: none;
-          // color: $primaryDarkerBlue;
           color: #fff;
         }
 
@@ -130,9 +123,9 @@
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid $primaryDarkerBlue;
             background-color: #fff;
-            // background-color: red;
             padding: 10px 0 0 10px;
             color: $primaryDarkerBlue;
+            cursor: pointer;
 
             a {
               padding: 5px 0;
@@ -140,7 +133,6 @@
               display: block;
               color: $primaryDarkerBlue;
               padding: 0.5em 1em;
-              // color: red;
             }
 
             .dropdown-content a:hover {
